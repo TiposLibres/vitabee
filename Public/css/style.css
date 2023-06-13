@@ -1,0 +1,576 @@
+/* FONTS */
+@font-face {
+    font-family: 'Univers LT Std Bold';
+    src: url('../fonts/UniversLTStd-BoldCn.eot');
+    src: url('../fonts/UniversLTStd-BoldCn.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UniversLTStd-BoldCn.woff2') format('woff2'),
+        url('../fonts/UniversLTStd-BoldCn.woff') format('woff'),
+        url('../fonts/UniversLTStd-BoldCn.ttf') format('truetype'),
+        url('../fonts/UniversLTStd-BoldCn.svg#UniversLTStd-BoldCn') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Univers LT Std Regular';
+    src: url('../fonts/UniversLTStd-Cn.eot');
+    src: url('../fonts/UniversLTStd-Cn.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UniversLTStd-Cn.woff2') format('woff2'),
+        url('../fonts/UniversLTStd-Cn.woff') format('woff'),
+        url('../fonts/UniversLTStd-Cn.ttf') format('truetype'),
+        url('../fonts/UniversLTStd-Cn.svg#UniversLTStd-Cn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Univers LT Std Ultra';
+    src: url('../fonts/UniversLTStd-UltraCn.eot');
+    src: url('../fonts/UniversLTStd-UltraCn.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UniversLTStd-UltraCn.woff2') format('woff2'),
+        url('../fonts/UniversLTStd-UltraCn.woff') format('woff'),
+        url('../fonts/UniversLTStd-UltraCn.ttf') format('truetype'),
+        url('../fonts/UniversLTStd-UltraCn.svg#UniversLTStd-UltraCn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+:root{
+    --color-white:#ffffff;
+    --color-black:#000000;
+    --color-black-vitabee:#161615;
+    --color-amarillo-vitabee:#FFDF00;
+    --font-Univers-Bold:'Univers LT Std Bold';
+    --font-Univers-Regular:'Univers LT Std Regular';
+    --font-Univers-Ultra:'Univers LT Std Ultra';
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+/* TÍTULOS */
+.tit_encabezado{
+    font-family: var(--font-Univers-Ultra);
+    font-size: 5.5vw;
+    line-height: 1;
+}
+.tit_principal{
+    position: relative;
+    font-family: var(--font-Univers-Ultra);
+    font-size: 4.5rem;
+    line-height: 1;
+    z-index: 3;
+}
+.subtit_principal{
+    font-family: var(--font-Univers-Bold);
+    font-size: 1.5rem;
+}
+.txt_general{
+    font-family: var(--font-Univers-Regular);
+    font-size: 1.2rem;
+    color: var(--color-black-vitabee);
+}
+.destacado{
+    background-color: var(--color-amarillo-vitabee);
+    width: fit-content;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-bottom: 32px;
+}
+.tit_detalle_0{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-image: url('../images/svg/tit_decorative.svg');
+    background-size: cover;
+    left: -30px;
+    top: 80px;
+    z-index: 2;
+}
+.tit_abeja_0{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url('../images/svg/vitabee_abeja_1.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 18px;
+    right: 90px;
+}
+.tit_detalle{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-image: url('../images/svg/tit_decorative.svg');
+    background-size: cover;
+    left: 44%;
+    top: -30px;
+    z-index: 2;
+}
+.tit_abeja{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/svg/vitabee_abeja_2.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    right: 60px;
+    top: -12px;
+}
+.cb-cursor{
+    display: none;
+}
+
+/* BOTONES */
+.btn_especial{
+    background-color: var(--color-amarillo-vitabee);
+    border-radius: 25px;
+}
+.btn_especial > a{
+    color: var(--color-black-vitabee)!important;
+    padding-left: 24px!important;
+    padding-right: 24px!important;
+}
+
+/* NAVEGACIÓN */
+#navbarSupportedContent{
+    justify-content: end;
+}
+.nav-header{
+    background-color: var(--color-black-vitabee);
+    padding: 12px 0px;
+}
+#menu_principal{
+    gap: 26px;
+}
+#menu_principal li a{
+    color: var(--color-white);
+    font-family: var(--font-Univers-Bold);
+}
+.navbar-brand svg{
+    width: 160px;
+}
+
+/* ENCABEZADO PRINCIPAL */
+#encabezado_principal .col_left_txt, #encabezado_principal .col_right_img{
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.encabezado{
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url('../images/background-vitabee.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.list_tit{
+    list-style: none;
+    color: var(--color-black-vitabee);
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 16px;
+    margin-bottom: 36px;
+}
+.list_tit .item_tit{
+    background-color: var(--color-white);
+    padding: 8px 16px 4px 16px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 12px rgba(0,0,0,0.14);
+    font-size: 0.9rem;
+    font-family: var(--font-Univers-Bold);
+    font-weight: 600;
+}
+.btn_principal{
+    background-color: var(--color-black-vitabee);
+    color: var(--color-amarillo-vitabee);
+    padding: 12px 24px 6px 24px;
+    border-radius: 22px;
+    transition: all 0.4s;
+    font-family: var(--font-Univers-Bold);
+    font-size: 1.2rem;
+}
+.btn_principal:hover{
+    background-color: var(--color-black);
+    color: var(--color-amarillo-vitabee);
+}
+.col_right_img{
+    text-align: center;
+}
+.col_right_img img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* PRODUCTO NUTRICIONAL */
+.informacion{
+    padding: 160px 0px;
+    background-image: url('../images/vitabee-backgound-producto-nutricional.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.informacion .tit_principal{
+    max-width: 200px;
+}
+.cont_panel_abejas{
+    position: relative;
+}
+.cont_panel_abejas img:nth-child(3){
+    margin-top: 8px;
+}
+.foto_right{
+    position: absolute;
+    top: calc(50% - 140px);
+    left: calc(50% - 68px);
+}
+.cont_txt_abeja{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* CARACTERÍSTICAS */
+.caracteristicas{
+    padding: 80px 0px 0px 0px;
+    background-image: url('../images/svg/pleca_energia.svg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+}
+.item_carac{
+    position: relative;
+}
+.tit_carac{
+    font-family: var(--font-Univers-Bold);
+    font-size: 1.5rem;
+}
+.tit_carac::before{
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    top: -10px;
+    left: -10px;
+    background-image: url('../images/svg/dot_list.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    z-index: -1;
+}
+.img_vb_30g{
+    width: 100%;    
+}
+.col_list_carac{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.list_carac{
+    list-style: none;
+}
+.list_carac{
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+.list_carac li{
+    width: calc(50% - 28px);
+}
+
+/* CONTACTO */
+.contacto{
+    background-color: var(--color-amarillo-vitabee);
+    background-image: url('../images/svg/pleca_footer.svg');
+    background-position: bottom -2px center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 80px 0px 120px 0px;
+}
+.cont_contacto_list{
+    margin-top: 156px;
+}
+.item_contacto{
+    margin-top: 28px;
+}
+.item_contacto a{
+    color: var(--color-black-vitabee);
+}
+.list_redes{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.icon_social{
+    width: 24px;
+}
+.btn_mail{
+    font-family: var(--font-Univers-Regular);
+    font-size: 1.2rem;
+}
+#formulario{
+    width: 90%;
+}
+#formulario input, #formulario textarea{
+    width: 100%;
+    margin-bottom: 24px;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+#formulario input::placeholder{
+    color: #AFAFAF;
+    font-family: var(--font-Univers-Bold);
+}
+#formulario textarea{
+    height: 120px;
+}
+#formulario input[type=submit]{
+    background-color: var(--color-black-vitabee);
+    font-family: var(--font-Univers-Regular);
+    font-size: 1.2rem;
+    color: var(--color-amarillo-vitabee);
+    width: fit-content;
+}
+
+
+/* __MENSAJE DE ERROR__ */
+.formulario__input-error {
+    font-family: var(--font-auto-pro);
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+    display: none;
+}
+.formulario__input-error-activo {
+	display: block;
+}
+.formulario__validacion-estado {
+    position: absolute;
+    right: 28px;
+    top: 8px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+#banner_reserva .formulario__validacion-estado {
+    position: absolute;
+    right: unset;
+    top: 18px;
+    margin-left: 120px;
+}
+#banner_reserva .item_form:nth-child(2) .formulario__validacion-estado{
+    margin-left: 144px;
+}
+#banner_reserva .item_form:nth-child(4) .formulario__validacion-estado {
+    margin-left: 156px;
+}
+.formulario__mensaje, .formulario__captcha{
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+.formulario__mensaje-activo {
+	display: block;
+}
+.formulario__mensaje-exito {
+    margin-top: 8px;
+	font-size: 14px;
+	background-color: #1eab0b;
+    padding: 10px 15px;
+    color: var(--color-white);
+	display: none;
+}
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+/* FOOTER */
+.foot{
+    padding: 60px 0px 60px 0px;
+    background-color: var(--color-black-vitabee);
+}
+.logo_legales{
+    width: 120px;
+    margin-bottom: 16px;
+}
+.txt_legales{
+    color: var(--color-white);
+    font-family: var(--font-Univers-Regular);
+    font-size: 1rem;
+}
+.menu_foot li{
+    color: var(--color-white);
+}
+.tit_foot{
+    color: var(--color-white);
+    font-family: var(--font-Univers-Bold);
+    font-size: 1.2rem;
+}
+.txt_foot{
+    color: var(--color-white);
+    font-family: var(--font-Univers-Regular);
+    font-size: .8rem;
+}
+
+/* RESPONSIVE */
+    /* 1360 */
+@media screen and (min-width: 1360px) {
+    .tit_encabezado{
+        font-size: 5rem;
+    }
+    .informacion{
+        background-size: contain;
+    }
+    .contacto, .caracteristicas{
+        background-position: bottom -2px left -2px;
+        background-size: 101%;
+    }
+}
+
+    /* 1200 */
+@media screen and (max-width: 1200px) {
+    .list_tit .item_tit{
+        padding: 8px 8px 4px 8px;
+    }
+    .cont_panel_abejas img{
+        width: 270px;
+    }
+    .foto_right{
+        top: calc(50% - 120px);
+        left: calc(50% - 56px);
+    }
+    .tit_detalle_0{
+        top: 20px;
+    }
+    .destacado{
+        font-size: 1.6rem;
+    }
+    .caracteristicas {
+        padding: 40px 0px 0px 0px;
+    }
+}
+
+    /* 991 */
+@media screen and (max-width: 991px) {
+    #encabezado_principal .col_left_txt, #encabezado_principal .col_right_img {
+        height: auto;
+    }
+    .encabezado .col_right_img img{
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    .nav-header i{
+        color: var(--color-white);
+        font-size: 2rem;
+    }
+    #menu_principal {
+        gap: 12px;
+    }
+    #menu_principal{
+        padding-top: 32px;
+        padding-bottom: 16px;
+    }
+    .btn_especial{
+        width: fit-content;
+    }
+    .encabezado{
+        text-align: center;
+    }
+    .list_tit{
+        justify-content: center;
+    }
+    .informacion{
+        padding: 100px 0px 80px 0px;
+    }
+    .informacion .tit_principal{
+        max-width: 100%;
+    }
+    .tit_detalle_0 {
+        top: -32px;
+        width: 100px;
+        height: 100px;
+    }
+    .tit_abeja_0{
+        right: 70px;
+    }
+    .destacado {
+        font-size: 1.2rem;
+    }
+    .cont_panel_abejas{
+        margin-top: 40px;
+    }
+    .cont_panel_abejas img {
+        width: 50%;
+    }
+    .foto_right {
+        top: calc(50% - 150px);
+        left: calc(50% - 70px);
+    }
+    .tit_detalle {
+        width: 100px;
+        height: 100px;
+        left: -30px;
+        top: -20px;
+    }
+    .cont_list_carac{
+        margin-top: 40px;
+    }
+    .caracteristicas .cont_btn{
+        text-align: center;
+    }
+    .img_vb_30g{
+        max-width: 320px;
+        margin-top: 30px;
+    }
+    .caracteristicas {
+        background-size: 101%;
+        background-position: bottom -2px left;
+    }
+    .cont_contacto_list {
+        margin-top: 0px;
+    }
+}
+
+/* 767 */
+@media screen and (max-width: 767px) {
+    .tit_encabezado{
+        font-size: 3.5rem;
+    }
+}
