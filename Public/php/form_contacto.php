@@ -9,20 +9,20 @@
     $respuesta = [];
     echo json_encode($respuesta);
 
-    // // GOOGLE reCAPTCHA
-    // $recaptcha = $_POST['g-recaptcha-response'];
-    // $secret = "6LfuuZomAAAAAA4WGUMj1CLayfc5wNfAwoRnwd-g";
+    // GOOGLE reCAPTCHA
+    $recaptcha = $_POST['g-recaptcha-response'];
+    $secret = "6LfuuZomAAAAAA4WGUMj1CLayfc5wNfAwoRnwd-g";
 
-    // // VALIDAMOS LA VERIFICACIÓN DEL reCAPTCHA
-    // if(!$recaptcha){
-    //     echo "Por favor verifica el captcha";
-    // } else{
-    //     $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$recaptcha");
-    //     var_dump($response);
-    //     $array = json_decode($response, true);
-    //     if($array["success"]){
+    // VALIDAMOS LA VERIFICACIÓN DEL reCAPTCHA
+    if(!$recaptcha){
+        echo "Por favor verifica el captcha";
+    } else{
+        $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$recaptcha");
+        var_dump($response);
+        $array = json_decode($response, true);
+        if($array["success"]){
                 
-            // echo "<h2>Gracias</h2>";
+            echo "<h2>Gracias</h2>";
 
             //ENVIAMOS EL FORMULARIO
             echo('DATOS ENVIADOS CON EXITO: ' . $nombre . $correo . $telefono . $mensaje);
@@ -60,13 +60,13 @@
             $body = $cabecera . "\n\n" . '<br><h3>Asunto: ' . $asunto . '</h3>' . "\n\n" . '<br>Nombre: ' . $nombre . "\n\n" . '<br>Email: ' . $correo . "\n\n" . '<br>Teléfono: ' . $telefono . "\n\n" . '<br>Mensaje: ' . $mensaje . "\n\n";
 
             $success = @mail($email_to, $asunto, $body, $headers);
-            echo "Msn enviado";
+            echo "Msn enviado re-captcha";
             
 
-    //     } else {
-    //         echo "Error al comprobar el reCaptcha";
-    //     }
-    // }
+        } else {
+            echo "Error al comprobar el reCaptcha";
+        }
+    }
 
 
 
