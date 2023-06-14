@@ -1,0 +1,130 @@
+
+
+
+/* HEADER TEXT */
+#headertxt { 
+	width:97%; 
+	margin:0 auto; 
+	clear:both; 
+	position:absolute; 
+	z-index: 2; 
+	top: 19%; 
+}
+#firstline { 
+	color:#fff; 
+	font-size:60px;
+	line-height: 80px;
+	padding:0; 
+	float:left; 
+	display:block; 
+	text-align: center; 
+	width: 100%;
+	-webkit-text-shadow: 3px 3px 4px rgba(0,0,0,0.5);
+	-moz-text-shadow: 3px 3px 4px rgba(0,0,0,0.5);
+	-o-text-shadow: 3px 3px 4px rgba(0,0,0,0.5);
+	-ms-text-shadow: 3px 3px 4px rgba(0,0,0,0.5);
+	text-shadow: 3px 3px 4px rgba(0,0,0,0.5); 
+	font-weight: 300; 
+	margin-bottom: 15px; 
+}
+#secondline { 
+	color:#fff; 
+	text-decoration:none; 
+	font-size:60px; 
+	padding:0; 
+	float:left; 
+	display:block; 
+	clear:both; 
+	background: none; 
+	border: 0;  
+	text-align: center; 
+	width: 100%;
+	-webkit-text-shadow: 3px 3px 4px rgba(0,0,0,0.5);
+	-moz-text-shadow: 3px 3px 4px rgba(0,0,0,0.5);
+	-o-text-shadow: 3px 3px 4px rgba(0,0,0,0.5);
+	-ms-text-shadow: 3px 3px 4px rgba(0,0,0,0.5);
+	text-shadow: 3px 3px 4px rgba(0,0,0,0.5); 
+	font-weight: 300; 
+}
+
+
+
+@media only screen and (min-width:0px) and (max-width:509px){
+	#headertxt { 
+	top: 15%; 
+}
+#firstline { 
+	font-size:12px;
+	line-height: 10px;
+	margin-bottom: 0px; 
+}
+#secondline { 
+	font-size:12px; 
+}
+	
+}
+
+
+@media only screen and (min-width:510px) and (max-width:767px){
+	#headertxt { 
+	top: 16%; 
+}
+#firstline { 
+	font-size:18px;
+	line-height: 12px;
+	margin-bottom: 5px; 
+}
+#secondline { 
+	font-size:18px; 
+}
+	
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+		#headertxt { 
+	top: 16%; 
+}
+#firstline { 
+	font-size:24px;
+	line-height: 20px;
+	margin-bottom: 5px; 
+}
+#secondline { 
+	font-size:24px; 
+}
+	
+}
+
+@media only screen and (min-width:1024px) and (max-width:1199px){
+	
+	#headertxt { 
+	top: 17%; 
+}
+#firstline { 
+	font-size:30px;
+	line-height: 30px;
+	margin-bottom: 15px; 
+}
+#secondline { 
+	font-size:30px; 
+}
+	
+	
+}
+
+@media only screen and (min-width:1200px) and (max-width:1600px){
+	
+	#headertxt { 
+	top: 17%; 
+}
+#firstline { 
+	font-size:40px;
+	line-height: 40px;
+	margin-bottom: 15px; 
+}
+#secondline { 
+	font-size:40px; 
+}
+	
+	
+}

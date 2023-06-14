@@ -1,0 +1,20 @@
+
+.container {
+	height: 280vh;
+}
+
+.container__item {
+  transition: transform 1s;
+  transform: translate(calc(var(--move-x, 0) * var(--ratio-x, 0) * 3%), calc(var(--move-y, 0) * var(--ratio-y, 0) * 3%)); 
+}
+
+
+
+@media only screen and (min-width:0px) and (max-width:767px){
+	
+	.container__item {
+  transition: transform 1s;
+  transform: none; 
+}
+	
+}

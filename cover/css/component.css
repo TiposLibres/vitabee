@@ -1,0 +1,218 @@
+.cbp-af-header #menuiphone {
+	width: 100%;
+	text-align: center;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+	left: 0;
+	top: 50px;
+}
+
+main.interior .cbp-af-header #menuiphone {
+	width: calc(100% - 120px);
+	text-align: center;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+	left: 0;
+	top: 50px;
+	margin-left: 120px;
+}
+
+.cbp-af-header #menuiphone img{
+	width: 60px;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}
+
+.cbp-af-header #menuiphone img.letras{
+	width: 280px;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}
+
+.cbp-af-header.cbp-af-header-shrink {
+	width: auto;
+}
+
+
+.cbp-af-header.cbp-af-header-shrink #menuiphone{
+	left: 2px;
+	width: 60px;
+	top: 30px;
+}
+
+main.interior .cbp-af-header.cbp-af-header-shrink #menuiphone{
+	left: 2px;
+	width: 60px;
+	top: 30px;
+	margin: 0;
+}
+
+
+.cbp-af-header.cbp-af-header-shrink #menuiphone img{
+	width: 30px;
+	filter: none;
+}
+
+.cbp-af-header.cbp-af-header-shrink #menuiphone img.letras{
+	width: 30px;
+	opacity: 0;
+}
+
+
+
+@media only screen and (min-width:0px) and (max-width:450px){
+	
+.cbp-af-header #menuiphone {
+	width: 100%;
+	top: 65px;
+	left: auto;
+	right: 0;
+	display: none;
+}
+	
+.cbp-af-header #menuiphone img{
+	width: 40px;
+}	
+	
+.cbp-af-header #menuiphone img{
+	width: 40px;
+}
+	
+	
+.cbp-af-header.cbp-af-header-shrink #menuiphone{
+	left: auto;
+	right:  0;
+	width: 100%;
+	top: 65px;
+	opacity: 0;
+	display: none;
+}	
+	
+}
+
+
+
+@media only screen and (min-width:451px) and (max-width:767px){
+	
+.cbp-af-header #menuiphone {
+	width: 100%;
+	top: 65px;
+	left: auto;
+	right: 0;
+}
+	
+.cbp-af-header #menuiphone img{
+	width: 40px;
+}	
+	
+.cbp-af-header #menuiphone img.letras{
+	width: 180px;
+}
+	
+	
+.cbp-af-header.cbp-af-header-shrink #menuiphone{
+	left: auto;
+	right:  0;
+	width: 100%;
+	top: 65px;
+	opacity: 0;
+}
+	
+main.interior .cbp-af-header #menuiphone{
+	width: 100%;
+	top: 125px;
+	left: auto;
+	right: 0;
+}
+	
+main.interior .cbp-af-header.cbp-af-header-shrink #menuiphone{
+	left: auto;
+	right:  0;
+	width: 100%;
+	top: 10px;
+}
+	
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+	
+.cbp-af-header #menuiphone {
+	width: 100%;
+	top: 75px;
+	left: auto;
+	right: 0;
+}
+	
+.cbp-af-header #menuiphone img{
+	width: 50px;
+}	
+	
+.cbp-af-header #menuiphone img.letras{
+	width: 230px;
+}
+	
+	
+.cbp-af-header.cbp-af-header-shrink #menuiphone{
+	left: auto;
+	right:  2px;
+	width: 60px;
+	top: 10px;
+}
+	
+main.interior .cbp-af-header #menuiphone{
+	width: 100%;
+	top: 125px;
+	left: auto;
+	right: 0;
+}
+	
+main.interior .cbp-af-header.cbp-af-header-shrink #menuiphone{
+	left: auto;
+	right:  2px;
+	width: 60px;
+	top: 10px;
+}
+	
+}
+
+
+@media only screen and (min-width:1024px) and (max-width:1299px){
+
+.cbp-af-header #menuiphone {
+	width: 100%;
+	top: 25px;
+}
+	
+.cbp-af-header #menuiphone img{
+	width: 50px;
+}
+	
+.cbp-af-header #menuiphone img.letras{
+	width: 230px;
+}
+	
+}
+
+@media only screen and (min-width:1024px) and (max-width:1599px){
+	
+.cbp-af-header.cbp-af-header-shrink #menuiphone{
+	left: -4px;
+	width: 60px;
+	top: 30px;
+}
+	
+	
+}

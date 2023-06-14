@@ -1,0 +1,95 @@
+
+
+/*********************** PRELOADER **************************************/
+
+#loader-wrapper{
+	position: 										fixed;
+	top: 											0;
+	left: 											0;
+	width: 											100%;
+	height: 										100%;
+	z-index: 										10000000000000;
+	background-color: 								#1a1a1a;
+	background-image: url(../images/loader-51.svg);
+	background-repeat: no-repeat;
+	background-size: 40px;
+	background-position: center;
+}
+
+#loader{
+	display: 										block;
+	position: 										relative;
+	left: 											50%;
+	top: 											50%;
+	width: 											100px;
+	height: 										100px;
+	margin: 										-50px 0 0 -50px;
+	border: 										0px solid #556270;
+	z-index: 										150;
+}
+
+#loader:before {
+    content: 										"";
+    position: 										absolute;
+    top: 											5px;
+    left: 											5px;
+    right: 											5px;
+    bottom: 										5px;
+    border: 										0px solid #a6ac96;
+	background: url(../images/loader-50.svg) no-repeat;
+	background-size: 100%;
+	filter: grayscale(100%);
+}
+
+#loader:after {
+    content: 										"";
+    position: 										absolute;
+    top: 											15px;
+    left: 											15px;
+    right: 											15px;
+    bottom: 										15px;
+    border: 										0px solid #fff;
+}
+
+/**************************** ANIMACION ************************************/
+
+#loader {
+-webkit-animation: giro 10s linear infinite;
+animation: giro 10s linear infinite;
+}
+
+#loader:before {
+-webkit-animation: giro 5s reverse infinite;
+animation: giro 5s linear infinite;
+}
+
+#loader:after {
+-webkit-animation: giro 2s linear infinite;
+animation: giro 2s linear infinite;
+}
+
+@-webkit-keyframes giro {
+    0%{
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100%{
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+@keyframes giro {
+    0%{
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100%{
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
